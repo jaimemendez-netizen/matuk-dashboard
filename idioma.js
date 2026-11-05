@@ -422,6 +422,39 @@
     "completa": "complete",
     "No se encontró": "Not found:",
     "en la carpeta. Verifica que el archivo exista junto a esta página.": "in the folder. Make sure the file is next to this page.",
+    // Antigüedad de saldos
+    "Antigüedad de Saldos": "Receivables Aging",
+    "Antigüedad de": "Receivables",
+    "Saldos 2026": "Aging 2026",
+    "Saldo pendiente de cobro por cliente y días de vencimiento · corte mensual y provisión de cobranza": "Outstanding receivables by client and days past due · monthly cutoff and collections forecast",
+    "Se muestran los importes en USD y MXN juntos.": "USD and MXN amounts are shown together.",
+    "Sólo se consideran las facturas emitidas en dólares.": "Only invoices issued in dollars are included.",
+    "Sólo se consideran las facturas emitidas en pesos.": "Only invoices issued in pesos are included.",
+    "Todas": "All",
+    "Saldo pendiente (USD)": "Outstanding balance (USD)",
+    "Saldo pendiente en USD (fuera del filtro)": "Outstanding balance in USD (outside filter)",
+    "Saldo pendiente en MXN": "Outstanding balance in MXN",
+    "Por vencer (AT DATE)": "Not yet due (AT DATE)",
+    "Vencido al corte": "Past due at cutoff",
+    "Vencido": "Past due",
+    "Facturas / clientes": "Invoices / clients",
+    "clientes con saldo": "clients with balance",
+    "cliente(s) facturados en pesos": "client(s) billed in pesos",
+    "sin saldo en pesos a esta fecha": "no peso balance at this date",
+    "del saldo": "of balance",
+    "corte al": "as of",
+    "Corte mensual": "Monthly cutoff",
+    "facturación de 2025 y de los meses hasta el seleccionado, aplicando sólo los pagos recibidos hasta ese corte": "2025 billing and months up to the selected one, applying only payments received up to that cutoff",
+    "Antigüedad de saldos por cliente": "Receivables aging by client",
+    "clic de nuevo para quitar": "click again to clear",
+    "esta tabla siempre muestra el total (USD + MXN)": "this table always shows the total (USD + MXN)",
+    "Total general": "Grand total",
+    "Provisión de cobranza · próximos 3 meses": "Collections forecast · next 3 months",
+    "provisión": "forecast",
+    "Saldo total": "Total balance",
+    "Sin saldos pendientes": "No outstanding balances",
+    "Se proyecta el cobro de cada factura pendiente en el mes de su vencimiento (Due Date).": "Each outstanding invoice is projected to be collected in its due month (Due Date).",
+    "se considera recuperable dentro de la ventana de 3 months; la primera columna incluye también los días restantes del mes de corte.": "is considered collectible within the 3-month window; the first column also includes the remaining days of the cutoff month.",
     // Acceso (contraseña)
     "Contraseña": "Password",
     "Entrar": "Sign in",
@@ -462,7 +495,9 @@
     [/\b(ENE|ABR|AGO|DIC)\b/g, function (m) { return MESES[m]; }],
     [/\b(ene|abr|ago|dic)(?=[-\/ ]\d)/g, function (m) { return meses_min[m]; }],
     [/(\d[-\/ ])(ene|abr|ago|dic)\b/g, function (m, a, b) { return a + meses_min[b]; }],
-    [/\bPeríodo\b/g, "Period"]
+    [/\bPeríodo\b/g, "Period"],
+    [/\bVence\b/g, "Due"],
+    [/\bcorte al (\d)/g, "as of $1"]
   ];
 
   /* ---------- Motor de traducción ---------- */
@@ -484,7 +519,7 @@
   var CACHE = new Map();
   function trTexto(s, el) {
     if (idioma !== "en" || !s || !/[A-Za-zÁÉÍÓÚÑáéíóúñ]/.test(s)) return s;
-    var m = s.match(/^(\s*)([\s\S]*?)(\s*)$/), core = m[2];
+    var m = s.match(/^(\s*)([\s\S]*?)(\s*)$/), core = m[2].replace(/\s+/g, " ");
     if (!core) return s;
     var ctx = el && el.id && CONTEXTO[el.id];
     if (ctx) {

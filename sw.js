@@ -1,7 +1,7 @@
 // MATUK · descifra en el navegador las páginas protegidas del sitio.
 // Las páginas viajan cifradas (enc/*.enc); este service worker las entrega
 // descifradas solo si en este navegador ya se ingresó la contraseña.
-const PROTEGIDOS = new Set(["index.html", "dashboard.html", "dashboard_pagos.html", "valores.html", "cuentas_por_pagar.html", "data.json"]);
+const PROTEGIDOS = new Set(["index.html", "dashboard.html", "dashboard_pagos.html", "dashboard_cobranza.html", "valores.html", "cuentas_por_pagar.html", "data.json"]);
 let llave = null;
 
 function abrirDB() {

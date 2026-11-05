@@ -3,10 +3,11 @@
  "iter": 600000,
  "firmas": {
   "index.html": "366eacf8156edd95a76a4a5aa879a1fceabf6b63faacf2f506fff554ec8d13a4",
-  "dashboard.html": "321a1925a11c8c75ee5cd1f8cbccc9cea7c02b170fe153f3715635163ab6ece4",
+  "dashboard.html": "583e25294f0e0aaf13ff8616fc7efbbefb5f2d36685d3ad6ca924219eddf7848",
   "dashboard_pagos.html": "e941f551e181656605f331404e079e9a0367f8fc2e9ea3ca5fb3afbafd73a30f",
   "valores.html": "8be41d5c3f885145e67470d457d5a5ee84af7ca792ed3c8c7b2c60e57b2b0634",
   "cuentas_por_pagar.html": "efbe9f50fdf855a5cb24c1d34c9ff0f1199bab194884bd1e7d081d5314f620a2",
-  "data.json": "d26e9680cdafdeb7b2ebb3fce3243c573e0038794e9a9a83b76e5a3a050ee90c"
+  "data.json": "0cdf6dc157429ea9fd3ecd9ba0ad2ffbfb42a4d714647974d33dd490f01a331c",
+  "dashboard_cobranza.html": "59973af898829aa65030aa1932c206a3589f82c3cca47f95bc4f68db38a439f3"
  }
 }
