@@ -280,6 +280,9 @@
     "Recurso": "Resource",
     // Flujo de caja
     "Saldos Bancos": "Bank Balances",
+    "Saldo bancos MXN": "Bank balance MXN",
+    "Total consolidado": "Consolidated total",
+    "Cierre": "Closing",
     "SALDOS BANCOS": "BANK BALANCES",
     "Saldo en Bancos": "Bank Balance",
     "Saldo en bancos": "Bank balance",

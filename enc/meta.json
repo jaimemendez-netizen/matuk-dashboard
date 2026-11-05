@@ -3,11 +3,11 @@
  "iter": 600000,
  "firmas": {
   "index.html": "366eacf8156edd95a76a4a5aa879a1fceabf6b63faacf2f506fff554ec8d13a4",
-  "dashboard.html": "583e25294f0e0aaf13ff8616fc7efbbefb5f2d36685d3ad6ca924219eddf7848",
-  "dashboard_pagos.html": "e941f551e181656605f331404e079e9a0367f8fc2e9ea3ca5fb3afbafd73a30f",
+  "dashboard.html": "742b4b59c6ce88606275d2d3306bea7dbce8817f5a2744c521a4b99c053c596f",
+  "dashboard_pagos.html": "446687e59b68e760110ae089a3b6f2557e61a252810a285f696d36fbdf814e5f",
   "valores.html": "8be41d5c3f885145e67470d457d5a5ee84af7ca792ed3c8c7b2c60e57b2b0634",
   "cuentas_por_pagar.html": "efbe9f50fdf855a5cb24c1d34c9ff0f1199bab194884bd1e7d081d5314f620a2",
-  "data.json": "d75ea331fcd2c622e4ef321a9f5f2e4857a7750974a3217a517e77f5a6b4575b",
+  "data.json": "16243ed340580bc2097425a3f3726a519b3dbb790b5d673bb8a3535b0f34303d",
   "dashboard_cobranza.html": "59973af898829aa65030aa1932c206a3589f82c3cca47f95bc4f68db38a439f3"
  }
 }
